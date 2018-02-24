@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.itktechnologies.braintrainer.MainActivity">
+    tools:context="com.itktechnologies.braintrainer.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <TextView
         android:id="@+id/txt_secs_left"
@@ -28,6 +29,7 @@
         android:padding="40dp"
         android:text="Go"
         android:textSize="80sp"
+        android:tag="go"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,10 +63,8 @@
 
     <GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,8 +73,8 @@
 
         <Button
             android:id="@+id/cmdAnswer1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="140dp"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
@@ -85,13 +85,13 @@
             android:paddingLeft="60sp"
             android:paddingRight="60sp"
             android:tag="0"
-            android:text="1"
-            android:textSize="80sp" />
+            android:text="12"
+            android:textSize="60sp" />
 
         <Button
             android:id="@+id/cmdAnswer2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="140dp"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
@@ -102,13 +102,13 @@
             android:paddingLeft="60sp"
             android:paddingRight="60sp"
             android:tag="1"
-            android:text="2"
-            android:textSize="80sp" />
+            android:text="12"
+            android:textSize="60sp" />
 
         <Button
             android:id="@+id/cmdAnswer3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="140dp"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
@@ -119,14 +119,14 @@
             android:paddingLeft="60sp"
             android:paddingRight="60sp"
             android:tag="2"
-            android:text="3"
-            android:textSize="80sp" />
+            android:text="12"
+            android:textSize="60sp" />
 
 
         <Button
             android:id="@+id/cmdAnswer4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="140dp"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
@@ -137,8 +137,8 @@
             android:paddingLeft="60sp"
             android:paddingRight="60sp"
             android:tag="3"
-            android:text="4"
-            android:textSize="80sp" />
+            android:text="12"
+            android:textSize="60sp" />
 
 
     </GridLayout>
@@ -149,11 +149,11 @@
         android:layout_height="71dp"
         android:layout_marginEnd="82dp"
         android:layout_marginStart="82dp"
-        android:layout_marginTop="46dp"
-        android:text="Correct!"
+        android:text=""
         android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
